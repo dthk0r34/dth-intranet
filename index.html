@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tistory Twitter</title>
+    <title>대한퇴마협회 인트라넷</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
@@ -53,8 +53,17 @@
         };
     </script>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 font-sans">
-
+<body class="font-sans relative">
+<!-- 배경 이미지 레이어 -->
+<div class="fixed inset-0 -z-10">
+    <!-- 배경 이미지 -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+         style="background-image: url('https://images.unsplash.com/photo-1601721826401-c5e789be0be6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070');">
+    </div>
+    <!-- 반투명 오버레이 (가독성을 위해) -->
+    <div class="absolute inset-0 bg-white/80 dark:bg-gray-900/80"></div>
+</div>
+  
 <div id="root"></div>
 
 <script type="text/babel">
@@ -143,22 +152,14 @@ const MOCK_USERS = [
     { uid: 'user-008', name: '유저 8', handle: 'user8', color: 'bg-gray-500', profile: '8', group: 'group3' },
     { uid: 'user-009', name: '유저 9', handle: 'user9', color: 'bg-gray-500', profile: '9', group: 'group3' },
     { uid: 'user-010', name: '유저 10', handle: 'user10', color: 'bg-gray-500', profile: '10', group: 'group3' },
-];
     { uid: 'user-011', name: '유저 11', handle: 'user11', color: 'bg-gray-500', profile: '11', group: 'group4' },
-];
     { uid: 'user-012', name: '유저 12', handle: 'user12', color: 'bg-gray-500', profile: '12', group: 'group4' },
-];
     { uid: 'user-013', name: '유저 13', handle: 'user13', color: 'bg-gray-500', profile: '13', group: 'group4' },
-];
     { uid: 'user-014', name: '유저 14', handle: 'user14', color: 'bg-gray-500', profile: '14', group: 'group4' },
-];
     { uid: 'user-015', name: '유저 15', handle: 'user15', color: 'bg-gray-500', profile: '15', group: 'group5' },
-];
     { uid: 'user-016', name: '유저 16', handle: 'user16', color: 'bg-gray-500', profile: '16', group: 'group5' },
-];
     { uid: 'user-017', name: '유저 17', handle: 'user17', color: 'bg-gray-500', profile: '17', group: 'group5' },
-];
-    { uid: 'user-018', name: '유저 18', handle: 'user15', color: 'bg-gray-500', profile: '18, group: 'group5' },
+    { uid: 'user-018', name: '유저 18', handle: 'user18', color: 'bg-gray-500', profile: '18', group: 'group5' },
 ];
 
 
